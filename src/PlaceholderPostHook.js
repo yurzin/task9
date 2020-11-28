@@ -6,9 +6,7 @@ const PlaceHolderHook = () => {
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users/1/posts')
             .then(response => response.json())
-            .then(data => {
-                setData(data);
-            });
+            .then(data => setData(data));
     }, []);
 
     return (
